@@ -1,0 +1,19 @@
+{
+  "name": "agency-x",
+  "version": "1.0.0",
+  "description": "Pixel Squared",
+  "main": "index.js",
+  "dependencies": {
+    "foundation-sites": "^6.3.0",
+    "gulp": "^3.9.1"
+  },
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-sass": "^3.1.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "stephen degroote",
+  "license": "ISC"
+}

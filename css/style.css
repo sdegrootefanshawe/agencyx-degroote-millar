@@ -1,0 +1,103 @@
+#button {
+  background-color: #3BBFC9; }
+
+header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 80px;
+  z-index: 9999; }
+  @media (min-width: 640px) {
+    header {
+      height: 70px; } }
+  header .nav-bg {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 80px;
+    z-index: -1;
+    opacity: 0.8;
+    background-color: #3BBFC9; }
+    @media (min-width: 640px) {
+      header .nav-bg {
+        height: 70px; } }
+
+ul li {
+  display: inline;
+  font-size: 16px;
+  line-height: 80px;
+  margin-left: 5px; }
+  @media (min-width: 640px) {
+    ul li {
+      font-size: 22px;
+      margin-left: 20px; } }
+  ul li a,
+  ul li a:hover,
+  ul li a:visited {
+    color: #fff;
+    text-decoration: none; }
+  @media (min-width: 640px) {
+    ul li {
+      line-height: 70px; } }
+
+nav {
+  padding-left: 5px;
+  padding-right: 15px; }
+  nav .nav-logo {
+    margin-top: 20px;
+    max-width: 80px; }
+    @media (min-width: 640px) {
+      nav .nav-logo {
+        margin-top: 10px;
+        max-width: 100px; } }
+  nav .social-media-icon {
+    display: none; }
+    @media (min-width: 640px) {
+      nav .social-media-icon {
+        display: inline; } }
+
+.banner {
+  position: relative;
+  height: 100%;
+  margin-bottom: -50px; }
+  .banner .banner-logo {
+    max-width: 800px;
+    padding-top: 30vh; }
+  .banner .banner-bg {
+    position: absolute;
+    top: 0;
+    filter: blur(0px);
+    height: 100%; }
+
+.divider {
+  position: relative;
+  z-index: 99;
+  background-color: #353535;
+  height: 60px;
+  width: 100%; }
+  @media (min-width: 1280px) {
+    .divider {
+      width: 100%;
+      height: 100px;
+      margin-top: 50px; } }
+  .divider .divider-bg {
+    width: 100%;
+    height: 100%;
+    background-image: url("../images/banner.jpg");
+    opacity: 0.07; }
+    @media (min-width: 1280px) {
+      .divider .divider-bg {
+        opacity: 0.027; } }
+
+.services-icons {
+  width: 80px;
+  height: auto;
+  margin-left: 100px;
+  margin-top: 10px; }
+
+.team {
+  margin-top: 50px;
+  margin-bottom: 50px; }
+
+footer.divider {
+  height: 300px; }
