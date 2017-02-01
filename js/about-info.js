@@ -38,8 +38,8 @@ function object(e) {
 }
 function reWireEvents() {
   team = document.querySelectorAll(".team-photo");
-for (var i = 0; i < team.length; i++) {
-    team[i].addEventListener('click', object, false);
-}
+  for (var i = 0; i < team.length; i++) {
+      team[i].addEventListener('click', object, false);
+  }
 }
 reWireEvents();

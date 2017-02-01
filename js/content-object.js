@@ -3,15 +3,22 @@ var aboutcontact = [
     {content: "<div id='contactcontainer' class='row'><form method='post'><label for=''>Name:</label><input name='name' type='text'><label for=''>Company:</label><input name='company' type='text'><label for=''>Email:</label><input name='email' type='text'><label for=''>Message</label><textarea name='msg' cols='30' rows='10'></textarea><input class='button column' id='button' type='submit' value='Send'></form></div>"}
 ];
 
-var htmlArea = document.querySelector("#swapper");
+var htmlArea = document.querySelector("#swapper"), scrollStop = document.querySelector('.divider-bg');
 var link = document.querySelectorAll(".navigation");
 
 function swapIt(e) {
+	e.preventDefault();
+
     target = document.querySelector("#" + e.target.id);
-    if (target.id == 'home') {} else if (target.id == 'contact') {
+
+    if (target.id == 'home') {
+    	return false;
+    } else if (target.id == 'contact') {
         htmlArea.innerHTML = aboutcontact[1].content;
+        scrollStop.scrollIntoView(true);
     } else {
         htmlArea.innerHTML = aboutcontact[0].content;
+        scrollStop.scrollIntoView(true);
     }
 }
 
